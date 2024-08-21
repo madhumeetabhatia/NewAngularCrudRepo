@@ -1,0 +1,68 @@
+<div class="col-md-6 offset-md-3">
+    <div class="card ">
+    <div class="card-header bg-success text-white">
+    <h4> Create Employee </h4>
+    </div>
+    <form >
+        <div class="card-body ">
+            
+            <div class="form-group" >
+                 <div class="input-group ">
+                    <div class="input-group-prepend ">
+                         <label>Employee Id</label>
+                    </div>     
+                    <input type="text" class ="form-control" id = "empId" [(ngModel)] = "employeeObj.id" name = "empId" style="margin-left: 63px;">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group ">
+                    <div class="input-group-prepend ">
+                         <label> First Name</label>
+                    </div>
+                    <input type="text" class ="form-control" id = "firstName" [(ngModel)] = "employeeObj.firstName" name = "firstName" style="margin-left: 74px;">
+                 </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="input-group ">
+                    <div class="input-group-prepend ">
+                         <label> Last Name</label>
+                    </div>     
+                         <input type="text" class ="form-control" id = "lastName" [(ngModel)] = "employeeObj.lastName" name = "lastName" style="margin-left: 74px;">
+                </div>
+            </div>
+            <div class="form-group" >
+                <div class="input-group ">
+                    <div class="input-group-prepend ">
+                         <label> Email Id</label>
+                    </div>
+                         <input type="text" class ="form-control" id = "emailId" [(ngModel)] = "employeeObj.emailId" name = "emailId" style="margin-left: 94px;">
+                </div>
+            </div><br>
+            <div><b>Enter Address Details Current & Purmanent</b></div><br>
+            
+            <div class="form-group ">
+                 <div class="input-group ">
+                     <div class="input-group-prepend ">
+                          <div ><label> City Name  </label></div>
+                     </div>
+                     <input type="text" class ="form-control" [(ngModel)] = "employeeObj.address[0].city"  id = "city1"    name = "city" style="margin-left: 59px;">
+                 </div>
+            </div>  
+        
+            <div class="form-group ">
+                    <div class="input-group" >
+                        <div class="input-group-prepend">
+                           <div><label for=""> Address Type </label> </div> 
+                        </div>    
+                        <input type="text" class ="form-control"  [(ngModel)] = "employeeObj.address[0].addressType" id = "addressType"   name = "addressType" style="margin-left: 40px;">
+                    </div>
+            </div><br>
+            
+            <div class="col text-center"> <button class = "btn btn-success" type ="submit" (click)="addAddress()" >AddAddress</button></div><br>
+            <div class="col text-center"> <button class = "btn btn-success" type ="submit" (click)="saveEmployee()" >Submit</button></div>
+     </div>      
+  </form>
+</div>
+</div>
+

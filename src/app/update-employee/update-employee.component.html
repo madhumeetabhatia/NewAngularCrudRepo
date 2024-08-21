@@ -1,0 +1,60 @@
+
+<div class ="container col-md-6 " >
+<div >
+    <div class="card">
+    <div class="card-header bg-success text-white text-align-center">
+    <h4> Update Employee </h4>
+    </div>
+   
+        <div class="card-body">
+            <div class="form-group">
+                <label> Employee Id :</label>
+                <input type="text" class ="form-control" id = "firstName"
+                    [(ngModel)] = "employee.id" name = "firstName">
+            </div>   
+        <div class="form-group">
+            <label> First Name :</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "employee.firstName" name = "firstName">
+        </div>
+    
+        <div class="form-group">
+            <label> Last Name :</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "employee.lastName" name = "lastName">
+        </div>
+    
+        <div class="form-group">
+            <label> Email Id :</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "employee.emailId" name = "emailId">
+        </div>
+        <div class="form-group">
+            <label>Current City Name :</label>
+            <input type="text" class ="form-control" id = "city"
+                [(ngModel)] = "eAddress[0].city" name = "city">
+        </div>
+        <div class="form-group">
+            <label> Current Address Type :</label>
+            <input type="text" class ="form-control" id = "addressType"
+                [(ngModel)] = "eAddress[0].addressType" name = "addressType">
+        </div>
+        <div class="form-group">
+            <label> Permanent City Name :</label>
+            <input type="text" class ="form-control" id = "city"
+                [(ngModel)] = "eAddress[1].city" name = "city">
+        </div>
+        <div class="form-group">
+            <label> Permanent Address Type :</label>
+            <input type="text" class ="form-control" id = "addressType"
+                [(ngModel)] = "eAddress[1].addressType" name = "addressType">
+        </div>
+    
+        <div class ="col text-center">
+            <button class = "btn btn-success" type ="submit" (click) = "onSubmit()">Submit</button>
+        </div>
+        </div>
+    
+    </div> 
+</div>
+
